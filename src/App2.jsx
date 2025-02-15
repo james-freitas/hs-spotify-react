@@ -16,3 +16,35 @@ export default App2
 
 // Nomeação de Componente
 // PascalCase
+
+// Nomeação de Variavel, Função..
+// camelCase
+
+
+// export default, posso importar com qualquer nome e sem chaves
+// export "sem default" , só psso importar entre chaves e com o nome exportado
+
+// Self closing tag
+// <Header></Header>
+// <Header />
+
+
+// Box model
+// element.style {
+//   background-color: antiquewhite;
+//   padding: 20px;
+//   margin: 20px;
+//   border: solid 5px black;
+//   /* box-sizing: content-box; */ 
+//   width: 500px;
+// }
+
+// Nomeação de classes em CSS
+// Metodologia BEM
+// Blocks
+// Elements
+// Modifiers
+// bloco__elemento--modificador
+// header
+// header__link
+// header__link--small
