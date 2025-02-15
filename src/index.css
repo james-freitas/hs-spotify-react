@@ -30,3 +30,30 @@ a {
 .header__link:hover {
   text-decoration: underline;
 }
+
+/* Root */
+#root {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main */
+.main {
+  background-color: brown;
+  padding: 20px;
+  margin: 0 10px 10px;
+  border-radius: 15px;
+  flex: 1;
+  background-image: linear-gradient(to bottom, #062d14, black);
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__link:hover {
+  text-decoration: underline;
+}

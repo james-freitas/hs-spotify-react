@@ -48,3 +48,5 @@ export default App2
 // header
 // header__link
 // header__link--small
+
+// Tag vazia em React se chama Fragment ou Fragmento
