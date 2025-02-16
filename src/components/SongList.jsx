@@ -1,8 +1,9 @@
 import SongItem from "./SongItem";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 const SongList = ({ songsArray }) => {
-  const items = 5;
+  const [items, setItems] = useState(5);
 
   return (
     <>
@@ -13,7 +14,14 @@ const SongList = ({ songsArray }) => {
             <SongItem {...currentSongObj} index={index} key={index} />
           ))}
       </div>
-      <p className="song-list__see-more">See more</p>
+      <p
+        className="song-list__see-more"
+        onClick={() => {
+          setItems(items + 5);
+        }}
+      >
+        See more
+      </p>
     </>
   );
 };

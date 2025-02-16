@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ItemList = ({ title, items, itemsArray, path, idPath }) => {
   const { pathname } = useLocation(); // desestructuring
-  console.log(pathname);
+  //console.log(pathname);
 
   const isHome = pathname === "/";
 

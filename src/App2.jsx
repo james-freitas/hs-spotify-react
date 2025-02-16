@@ -95,3 +95,9 @@ export default App2;
 
 // Spread operator
 // ...
+
+// Quando componentes se renderizarão?
+// Quando uma variável de estado usada pelo componente for atualizada
+
+// Hook
+// useState
