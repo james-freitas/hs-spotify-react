@@ -2,8 +2,7 @@
 import SingleItem from './SingleItem'
 import PropTypes from 'prop-types'
 
-const ItemList = ({ title, items }) => {
-  console.log(items);
+const ItemList = ({ title, items, itemsArray }) => {
 
   return (
     <div className="item-list">
@@ -12,21 +11,22 @@ const ItemList = ({ title, items }) => {
         <a className="item-list__link" href="/">Show all</a>
       </div>
       <div className="item-list__container">
-      {
-        Array(items).fill().map((currentValue, index) => (
-          <SingleItem key={`${title}-${index}`} />
-        ))
-        
-      }
-      
-      
+        {itemsArray
+          .filter((_currentValue, index) => index < items)          
+          .map((currObj, index) => (
+            <SingleItem 
+              {...currObj} 
+              key={`${title}-${index}`} 
+            />
+          ))} 
       </div>
   </div>
   )
 }
 ItemList.propTypes = {
   title: PropTypes.string.isRequired,
-  items: PropTypes.array.isRequired
+  items: PropTypes.array.isRequired,
+  itemsArray: PropTypes.array.isRequired
 }
 
 export default ItemList

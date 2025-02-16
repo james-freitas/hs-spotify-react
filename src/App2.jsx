@@ -78,4 +78,23 @@ export default App2
     // }
 
 
-    
+    // {Array(items)
+    //   .fill()
+    //   .map((_currentValue, index) => (
+    //     <SingleItem key={`${title}-${index}`} />
+    //   ))} 
+
+    // {artistArray
+    //   .filter((_currentValue, index) => index < items)          
+    //   .map((currObj, index) => (
+    //     <SingleItem 
+    //       id={currObj.id} 
+    //       name={currObj.name} 
+    //       image={currObj.image} 
+    //       banner={currObj.banner} 
+    //       key={`${title}-${index}`} 
+    //     />
+    //   ))} 
+
+    // Spread operator
+    // ...
