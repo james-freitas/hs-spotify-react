@@ -5,6 +5,7 @@ import {
   faForwardStep,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Player = ({ duration, randomIdFromArtist, randomId2FromArtist }) => {
   return (
@@ -35,6 +36,11 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist }) => {
       </div>
     </div>
   );
+};
+Player.propTypes = {
+  duration: PropTypes.string.isRequired,
+  randomIdFromArtist: PropTypes.string.isRequired,
+  randomId2FromArtist: PropTypes.string.isRequired,
 };
 
 export default Player;
