@@ -1,5 +1,3 @@
-import React from 'react'
-
 const App2 = () => {
   return (
     <div>App2</div>
@@ -54,5 +52,30 @@ export default App2
 
 // Tag vazia em React se chama Fragment ou Fragmento
 
+// Coponentes recebem "props"
+
+    //   {items === 5 ?
+    //     <>
+    //       <SingleItem />
+    //       <SingleItem />
+    //       <SingleItem />
+    //       <SingleItem />
+    //       <SingleItem />        
+    //     </>
+    //     :
+    //     <>
+    //     <SingleItem />
+    //     <SingleItem />
+    //     <SingleItem />
+    //     <SingleItem /> 
+    //     <SingleItem />
+    //     <SingleItem />
+    //     <SingleItem />
+    //     <SingleItem /> 
+    //     <SingleItem />
+    //     <SingleItem /> 
+    //     </>
+    // }
 
 
+    
