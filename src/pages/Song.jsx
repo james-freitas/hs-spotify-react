@@ -18,8 +18,6 @@ const Song = () => {
     (currentSongObj) => currentSongObj.artist === artist
   );
 
-  console.log(songsArrayFromArtist);
-
   const randomIndex = Math.floor(
     Math.random() * (songsArrayFromArtist.length - 1)
   );

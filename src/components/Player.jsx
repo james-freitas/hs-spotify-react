@@ -40,15 +40,9 @@ const Player = ({
   const [currentTime, setCurrentTime] = useState(formatTime(0));
   const durationInSeconds = timeInSecods(duration);
 
-  console.log(durationInSeconds);
-
-  // console.log(audioPlayer.current.play());
-
   const playPause = () => {
     isPlaying ? audioPlayer.current.pause() : audioPlayer.current.play();
     setIsPlaying(!isPlaying);
-
-    // console.log(formatTime(audioPlayer.current.currentTime));
   };
 
   useEffect(() => {
