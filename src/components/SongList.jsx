@@ -1,18 +1,24 @@
 import SongItem from "./SongItem";
+import PropTypes from "prop-types";
 
-const SongList = () => {
+const SongList = ({ songsArray }) => {
+  const items = 5;
+
   return (
     <>
       <div className="song-list">
-        <SongItem />
-        <SongItem />
-        <SongItem />
-        <SongItem />
-        <SongItem />
+        {songsArray
+          .filter((currentValue, index) => index < items)
+          .map((currentSongObj, index) => (
+            <SongItem {...currentSongObj} index={index} key={index} />
+          ))}
       </div>
       <p className="song-list__see-more">See more</p>
     </>
   );
+};
+SongList.propTypes = {
+  songsArray: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default SongList;
