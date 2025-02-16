@@ -1,19 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SingleItem from "./SingleItem";
 import PropTypes from "prop-types";
 
 const ItemList = ({ title, items, itemsArray, path, idPath }) => {
+  const { pathname } = useLocation(); // desestructuring
+  console.log(pathname);
+
+  const isHome = pathname === "/";
+
+  const finalItems = isHome ? items : Infinity;
+
   return (
     <div className="item-list">
       <div className="item-list__header">
         <h2>Popular {title}</h2>
-        <Link to={path} className="item-list__link">
-          Show all
-        </Link>
+        {isHome ? (
+          <Link to={path} className="item-list__link">
+            Show all
+          </Link>
+        ) : (
+          <></>
+        )}
       </div>
       <div className="item-list__container">
         {itemsArray
-          .filter((_currentValue, index) => index < items)
+          .filter((_currentValue, index) => index < finalItems)
           .map((currObj, index) => (
             <SingleItem
               idPath={idPath}

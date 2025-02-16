@@ -1,11 +1,8 @@
 const App2 = () => {
-  return (
-    <div>App2</div>
-  )
-}
+  return <div>App2</div>;
+};
 
-export default App2
-
+export default App2;
 
 // rafce
 
@@ -18,6 +15,8 @@ export default App2
 // Nomeação de Variavel, Função..
 // camelCase
 
+// Nomeação de Classes
+// kebab-case
 
 // export default, posso importar com qualquer nome e sem chaves
 // export "sem default" , só psso importar entre chaves e com o nome exportado
@@ -26,14 +25,13 @@ export default App2
 // <Header></Header>
 // <Header />
 
-
 // Box model
 // element.style {
 //   background-color: antiquewhite;
 //   padding: 20px;
 //   margin: 20px;
 //   border: solid 5px black;
-//   /* box-sizing: content-box; */ 
+//   /* box-sizing: content-box; */
 //   width: 500px;
 // }
 
@@ -54,47 +52,46 @@ export default App2
 
 // Coponentes recebem "props"
 
-    //   {items === 5 ?
-    //     <>
-    //       <SingleItem />
-    //       <SingleItem />
-    //       <SingleItem />
-    //       <SingleItem />
-    //       <SingleItem />        
-    //     </>
-    //     :
-    //     <>
-    //     <SingleItem />
-    //     <SingleItem />
-    //     <SingleItem />
-    //     <SingleItem /> 
-    //     <SingleItem />
-    //     <SingleItem />
-    //     <SingleItem />
-    //     <SingleItem /> 
-    //     <SingleItem />
-    //     <SingleItem /> 
-    //     </>
-    // }
+//   {items === 5 ?
+//     <>
+//       <SingleItem />
+//       <SingleItem />
+//       <SingleItem />
+//       <SingleItem />
+//       <SingleItem />
+//     </>
+//     :
+//     <>
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     <SingleItem />
+//     </>
+// }
 
+// {Array(items)
+//   .fill()
+//   .map((_currentValue, index) => (
+//     <SingleItem key={`${title}-${index}`} />
+//   ))}
 
-    // {Array(items)
-    //   .fill()
-    //   .map((_currentValue, index) => (
-    //     <SingleItem key={`${title}-${index}`} />
-    //   ))} 
+// {artistArray
+//   .filter((_currentValue, index) => index < items)
+//   .map((currObj, index) => (
+//     <SingleItem
+//       id={currObj.id}
+//       name={currObj.name}
+//       image={currObj.image}
+//       banner={currObj.banner}
+//       key={`${title}-${index}`}
+//     />
+//   ))}
 
-    // {artistArray
-    //   .filter((_currentValue, index) => index < items)          
-    //   .map((currObj, index) => (
-    //     <SingleItem 
-    //       id={currObj.id} 
-    //       name={currObj.name} 
-    //       image={currObj.image} 
-    //       banner={currObj.banner} 
-    //       key={`${title}-${index}`} 
-    //     />
-    //   ))} 
-
-    // Spread operator
-    // ...
+// Spread operator
+// ...
