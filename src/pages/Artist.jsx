@@ -11,13 +11,10 @@ const Artist = () => {
   const { name, banner } = artistArray.filter(
     (currentArtistObj) => currentArtistObj.id === Number(id)
   )[0];
-  //console.log(artistObj);
 
   const songsArrayFromArtist = songsArray.filter(
     (currentSongObj) => currentSongObj.artist === name
   );
-
-  //console.log(songsArrayFromArtist);
 
   const randomIndex = Math.floor(
     Math.random() * (songsArrayFromArtist.length - 1)
